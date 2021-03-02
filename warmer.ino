@@ -85,8 +85,8 @@ void setup(void) {
   createCustomCharacters();
   printFrame();
 
-  lcd.setCursor(3,1);
-  lcd.print("Drink Temp. is:");  
+  lcd.setCursor(4,1);
+  lcd.print("Drink Temp.:");  
 }
  
 void loop(void) {
