@@ -83,8 +83,10 @@ void setup(void) {
   lcd.begin(20,4);
 
   createCustomCharacters();
- 
   printFrame();
+
+  lcd.setCursor(3,1);
+  lcd.print("Drink Temp. is:");  
 }
  
 void loop(void) {
@@ -114,14 +116,10 @@ void loop(void) {
   steinhart = 1.0 / steinhart;                 // Invert
   steinhart -= 273.15;                         // convert absolute temp to C
 
-  lcd.setCursor(3,1);
-  lcd.print("Drink Temp. is:"); 
   lcd.setCursor(6,2);
   lcd.print(steinhart);
   lcd.print(" *C");
-  delay(10000);
-  lcd.clear();
-  delay(1000);
+  delay(5000);
 }
 
 void printFrame()
