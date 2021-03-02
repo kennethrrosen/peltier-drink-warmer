@@ -119,7 +119,7 @@ void loop(void) {
   lcd.setCursor(6,2);
   lcd.print(steinhart);
   lcd.print(" *C");
-  delay(5000);
+  delay(2500);
 }
 
 void printFrame()
